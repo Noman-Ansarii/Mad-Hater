@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--main-bg-color);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg-color: #f1f1f1;
+    --navbar-color: #181818;
+}
+
+nav {
+    background: #181818;
+    width: 70%;
+    height: 60px;
+    color: var(--main-bg-color);
+    border-radius: 0 0 40px 0;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-text {
+    padding-top: 1.4rem;
+    padding-left: 3rem;
+    font-size: .8rem;
+}
+
+.main-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-link {
+    padding: 1.4rem 2.5rem 0 0;
+    text-transform: uppercase;
+    font-size: .9rem;
+    transition: transform .5s ease;
+}
+
+.main-link:hover {
+    transform: scale(1.05);
+    color: #B6BBC4;
+}
+
+.main-link a {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.main-link a::before,
+.main-link a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    /* Height of the border */
+    background-color: #B6BBC4;
+    /* Color of the border */
+    transition: width 0.5s ease;
+    /* Transition effect */
+}
+
+.main-link a:hover::before {
+    width: 100%;
+}
+
+.main-link a:hover::after {
+    width: 100%;
+}
+
+.menu i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Home.js */
+
+.Home {
+    padding: 12rem 0;
+}
+
+.desgin-div {
+    text-align: left;
+}
+
+.desgin-div h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.desgin-div span {
+    font-size: 3rem;
+    font-weight: 350;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.Div-Of-Circles {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: .4rem solid #000;
+    background: transparent;
+    margin: 0 0 0 2rem;
+}
+
+.desgin-div p {
+    text-align: justify;
+}
+
+.img-div img {
+    height: 590px;
+}
+
+/* Page.No.2 */
+
+.Home2 {
+    padding: 4rem 0;
+}
+
+.Heading-Page2 {
+    padding: 2rem 0 6rem 0;
+}
+
+.weekly-insight {
+    background: var(--navbar-color);
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Heading-Page2 h1,
+span {
+    display: inline;
+    padding-right: 0;
+}
+
+.Heading-Page2 h1 {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 800;
+}
+
+.Heading-Page2 span {
+    font-size: 5.5rem;
+    font-weight: 300;
+}
+
+.res-img {
+    position: relative;
+    padding: 3rem;
+    background: var(--main-bg-color);
+    border: 0 solid #000;
+}
+
+.Page2-Img h5 {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--navbar-color);
+    font-size: 1rem;
+    text-align: right;
+    z-index: 1;
+}
+
+.div-details p {
+    text-align: justify;
+    padding: 10%;
+}
+
+.img-t {
+    width: 367px;
+    height: 541px;
+    background: var(--main-bg-color) !important;
+    border: 0 solid #000 !important;
+}
+
+/* Design.Page.1 */
+.container-fluid {
+    text-align: center;
+}
+
+.Design1 {
+    padding: 1rem 0;
+}
+
+.text {
+    padding: 8rem 0 5rem 0;
+    font-weight: bolder;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--navbar-color);
+}
+
+.Div1 h1,
+.Div2 h1,
+.Div3 h1 {
+    color: gray;
+    font-weight: bolder;
+    font-size: 10rem;
+}
+
+.Div1 span,
+.Div2 span,
+.Div3 span {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--navbar-color);
+}
+
+.inner-div {
+    text-align: center;
+}
+
+.inner-div p {
+    font-weight: 500;
+    padding: 0 20%;
+}
+
+/* 2nd.Page */
+/* 3rd.Page */
+
+.Design2 {
+    margin: 10rem 0;
+}
+
+
+/* Design4.js */
+
+.Design4 {
+    background: var(--navbar-color);
+    color: var(--main-bg-color);
+}
+
+.Principals {
+    padding: 4rem;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    word-spacing: 20px;
+}
+
+.Principals span {
+    font-weight: 300;
+}
+
+.img-div4 {
+    text-align: center;
+}
+
+.img-div4 img {
+    border-radius: 30px;
+}
+
+.img-div4 h2 {
+    font-weight: 800;
+    padding: 15px 0;
+}
+
+.Design4_IMG {
+    background: none;
+    border: 0 solid #000;
+}
+
+.img-div4 p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+.circle4 {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0;
+}
+
+.Div-Of-Circles4 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: .4rem solid var(--main-bg-color);
+    background: transparent;
+    margin-right: 2rem;
+}
+
+.arrow {
+    text-align: center;
+    margin: 6rem 0 0 0;
+}
+
+.arrow i {
+    font-size: 3rem;
+}
+
+/* Footer.js */
+
+.Footer{
+    background-color: var(--main-bg-color);
+    color: var(--navbar-color);
+}
+
+.Footer h1{
+    font-weight: 700;
+    padding: 10rem 0 2rem 0;
+}
+
+.Footer-Flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--navbar-color);
+    font-weight: 500;
+}
+
+.inner-links a{
+    color: var(--navbar-color);
+}
+
+.inner-links a:hover{
+    color: #B6BBC4;
+    text-decoration: underline;
+}
+
+.Footer-Flex{
+    flex-wrap: wrap;
+}
+
+.Copyright{
+    padding: 4rem 0 1rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .Principals {
+        padding: 5rem;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+
+    .Principals span {
+        font-weight: 300;
+    }
+
+    .Heading-Page2 h1,
+    span {
+        padding-right: 0;
+    }
+
+    .Heading-Page2 h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+
+    .Heading-Page2 span {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    .text {
+        padding: 5rem 0 5rem 0;
+        font-weight: 900;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: var(--navbar-color);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menu i {
+        display: block;
+        padding: 10px 20px 0 0;
+    }
+
+    nav{
+        width: 80%;
+        z-index: 1000;
+    }
+
+    .MainHome{
+        z-index: -1;
+    }
+
+    .navbar-container {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .main-item {
+        position: absolute;
+        top: 100%;
+        right: 0; /* Position the menu on the right side initially */
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--navbar-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        overflow: hidden;
+        transition: transform 0.3s ease; /* Transition the transform property */
+        transform: translateX(-100%); /* Move the menu out of the viewport */
+        border-radius: 0 40px 40px 0;
+        display: block;
+      }
+      
+      .main-item.show {
+        transform: translateX(0); /* Move the menu to the left */
+      }
+
+    .main-item a {
+        font-size: 16px;
+        margin: 3rem 0;
+    }
+
+    .main-link {
+        padding: 1.4rem 2.5rem 0 0;
+        text-transform: uppercase;
+        font-size: .9rem;
+        transition: .5s ease;
+    }
+
+    .main-link:hover {
+        transform: none;
+        color: #B6BBC4;
+    }
+
+    .FleXOFCircle{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 452px) {
+  
+    .Principals {
+        padding: 5rem;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .Principals span {
+        font-weight: 300;
+    }
+
+    .Heading-Page2 h1,
+    span {
+        padding-right: 0;
+    }
+
+    .Heading-Page2 h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .Heading-Page2 span {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .text {
+        padding: 5rem 0 5rem 0;
+        font-weight: 900;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: var(--navbar-color);
+    }
+}
+@media screen and (max-width: 364px) {
+  
+    .Principals {
+        padding: 4rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .Principals span {
+        font-weight: 300;
+    }
+
+    .Heading-Page2 h1,
+    span {
+        padding-right: 0;
+    }
+
+    .Heading-Page2 h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .Heading-Page2 span {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .text {
+        padding: 5rem 0 5rem 0;
+        font-weight: 900;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: var(--navbar-color);
+    }
+}
